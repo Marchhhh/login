@@ -1,0 +1,87 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LEvernote"
+        android:padding="16dp"
+        android:fontFamily="RobotoSlab-Regular.ttf"
+        android:textColor="#555"
+        android:gravity="center"
+        android:textSize="40sp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Record at any time! "
+        android:gravity="center"
+        android:padding="8dp"
+        />
+
+    <EditText
+        android:id="@+id/edit_activity_login_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:drawableLeft="@drawable/ic_person"
+        android:drawablePadding="8dp"
+        android:hint="email"/>
+
+    <EditText
+        android:id="@+id/edit_activity_login_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="password"
+        android:inputType="textPassword"
+        android:drawableLeft="@drawable/ic_password"
+        android:drawablePadding="8dp"
+        android:layout_marginTop="8dp"/>
+
+    <CheckBox
+        android:text="Remember_me"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBox2"
+        />
+
+    <Button
+        android:id="@+id/btn_activity_login_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="login"
+        android:onClick="login"/>
+
+    <TextView
+        android:id="@+id/txt_activity_login_sign_up"
+        style="?android:borderlessButtonStyle"
+        android:textSize="15sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Don't Have an Account? Sign Up!"
+        android:textColor="#555"
+        android:onClick="onbutton"
+        />
+
+    <TextView
+        android:text="Forgot Password?"
+        android:textColor="#555"
+        style="?android:borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView8"
+        android:layout_weight="0.29"
+        android:textSize="15sp"
+        android:onClick="reset"
+        />
+
+
+</LinearLayout>
